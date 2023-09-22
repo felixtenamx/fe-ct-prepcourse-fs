@@ -3,12 +3,21 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
-   
+   if(array.length > 0){
+      return array[0];
+   }else {
+      return undefined;
+   }
 }
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   if(array.length - 1){
+      return array[0];
+   }else {
+      return undefined;
+   }
 }
 
 function obtenerLargoDelArray(array) {
