@@ -13,28 +13,31 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
-   if(array.length - 1){
-      return array[0];
-   }else {
-      return undefined;
-   }
+   const ultimoElemento = array[array.length - 1];
+   return ultimoElemento;
 }
 
 function obtenerLargoDelArray(array) {
    // Retornar la longitud del arreglo recibido por parámetro.
    // Tu código:
+   return array.length
 }
 
 function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   //for(i = 0; i < array.length; i++){
+
+   //}
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   array.push("elemento")
+   return array
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
