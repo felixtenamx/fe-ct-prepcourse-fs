@@ -27,23 +27,27 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
-   //for(i = 0; i < array.length; i++){
-
-   //}
+   return array.map(numero => numero + 1)
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   array.push("elemento")
-   return array
+   var array = [1, 2, 3];
+   var elemento = 4;
+   
+   array.push(elemento);
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
+   var array = [1, 2, 3];
+   var elemento = 4;
+   
+   array.unshift(elemento);
 }
 
 function dePalabrasAFrase(palabras) {
