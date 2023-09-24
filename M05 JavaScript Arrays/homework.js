@@ -34,19 +34,17 @@ function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   var array = [1, 2, 3];
-   var elemento = 4;
-   
-   return array.push(elemento);
+   array.push(elemento);
+   return array
+
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
    // Agrega el "elemento" al comienzo del arreglo recibido.
    // Retorna el arreglo.
    // Tu código:
-   var array = [1, 2, 3];
-   var elemento = 4;
    array.unshift(elemento);
+   return array
 }
 
 function dePalabrasAFrase(palabras) {
