@@ -37,7 +37,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
    var array = [1, 2, 3];
    var elemento = 4;
    
-   array.push(elemento);
+   return array.push(elemento);
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -46,7 +46,6 @@ function agregarItemAlComienzoDelArray(array, elemento) {
    // Tu código:
    var array = [1, 2, 3];
    var elemento = 4;
-   
    array.unshift(elemento);
 }
 
