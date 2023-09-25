@@ -53,18 +53,24 @@ function dePalabrasAFrase(palabras) {
    // con un espacio entre cada palabra.
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
+   var nuevasPalabras = palabras.join(' ');
+   return nuevasPalabras 
 }
 
 function arrayContiene(array, elemento) {
    // Verifica si el elemento existe dentro del arreglo recibido.
    // Retornar true si está, o false si no está.
    // Tu código:
+   var existente = array.includes(elemento);
+   return existente;
 }
 
 function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+   return arrayOfNums.reduce((x,y) => x + y);
+   
 }
 
 function promedioResultadosTest(resultadosTest) {
