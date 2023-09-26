@@ -77,12 +77,26 @@ function promedioResultadosTest(resultadosTest) {
    // El parámetro "resultadosTest" es un arreglo de números.
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
+   var suma = 0
+    for (i = 0; i < resultadosTest.length; i++ ){
+      i = i + 0  
+      suma = suma + resultadosTest[i]  
+   }
+   return suma/i
 }
 
 function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
+   var numeroMasGrande = arrayOfNums[0]
+
+  for (let i = 0; i < arrayOfNums.length; i++) {
+    if (arrayOfNums[i] > numeroMasGrande) {
+      numeroMasGrande = arrayOfNums[i];
+    }
+  }
+ return numeroMasGrande;
 }
 
 function multiplicarArgumentos() {
@@ -90,11 +104,27 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
+   var multiplicacion = arguments[0]
+
+   if (arguments.length === 0) {
+      return 0;
+    }
+   for (var i = 1; i < arguments.length; i++) {
+      multiplicacion = arguments[i]* multiplicacion;
+      
+   }
+   return multiplicacion
+  
 }
 
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
+   for (var i = 1; i < arguments.length; i++) {
+      
+      
+   }
+   return multiplicacion
 }
 
 function diaDeLaSemana(numeroDeDia) {
