@@ -194,7 +194,7 @@ function tablaDelSeis() {
    // Tu código:
 
    var array = [];
-for (i = 0; i > 60; i++) {
+for (i = 0; i <= 10; i++) {
   var multiplicacion = i * 6
   array.push(multiplicacion)
       
