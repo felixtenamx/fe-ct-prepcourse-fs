@@ -34,11 +34,9 @@ function agregarPropiedad(objeto, propiedad) {
    // Debes agregarle una propiedad con el nombre recibido por parámetro.
    // Esta propiedad será igual al valor `null`.
    // Retornar el objeto.
-   // Tu código:
-        
+   // Tu código:  
       objeto[propiedad] = null
-   
-   return objeto;
+      return objeto;
    
 }
 
@@ -47,7 +45,6 @@ function invocarMetodo(objeto, metodo) {
    // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
    // [NOTA]: no necesitar retornar nada.
    // Tu código:
-
    
 }
 
@@ -55,6 +52,16 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
    // El parámetro "objetoMisterioso" posee una propiedad con el nombre "numeroMisterioso".
    // Debes multiplicar este número por 5 y retornar el resultado.
    // Tu código:
+   var objeto = {
+      objetoMisterioso: numeroMisterioso,
+      
+
+   }
+
+   return objeto.objetoMisterioso * 5;
+
+
+   
 }
 
 function eliminarPropiedad(objeto, propiedad) {

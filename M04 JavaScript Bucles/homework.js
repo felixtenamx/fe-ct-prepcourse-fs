@@ -34,13 +34,19 @@ function conection(status) {
    // De lo contrario, presumimos que el usuario está "Offline".
    // Retornar el estado de conexión del usuario.
    // Tu código:
-   if(status = 1){
-      return "Online"
-   } else if(status = 2){
-      return "Away"
-   } else {
-      return "Offline"
+   switch (status) {
+      case 1:
+         status = "Online";
+         break;
+      case 2:
+         status = "Away";
+         break;
+      default:
+         status = "Offline";
+         break;
    }
+   return status;
+
 }
 
 function saludo(idioma) {
@@ -50,15 +56,22 @@ function saludo(idioma) {
    // Si "idioma" es "ingles", devuelve "Hello!".
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
-   if(idioma = "aleman"){
-      return "Guten Tag!"
-   }else if(idioma = "mandarin"){
-      return "Ni Hao"
-   }else if(idioma = "ingles"){
-      return "Hello"
-   }else {
-      return "Hola"
+   switch (idioma) {
+      case 'aleman':
+         idioma = 'Guten Tag!';
+         break
+      case 'mandarin':
+         idioma = 'Ni Hao!';
+         break
+      case 'ingles':
+         idioma = 'Hello!';
+         break
+      default:
+         idioma = 'Hola!';
+         break
    }
+
+   return idioma;
 }
 
 function colors(color) {
@@ -72,28 +85,46 @@ function colors(color) {
    // Tu código:
    switch (color) {
       case "blue":
-         return "This is blue";
+         color = "This is blue";
+         break
       case "red":
-         return "This is red";
+         color = "This is red";
+         break
       case "green":
-         return "This is green";
+         color = "This is green";
+         break
       case "orange":
-         return "This is orange";
+         color = "This is orange";
+         break
       default:
-         "Color not found";
+         color = "Color not found";
+         break
 
    }
+   return color;
 }
 
 function esDiezOCinco(num) {
    // Retornar true si "num" es 10 o 5.
    // De lo contrario, retornar false.
    // Tu código:
-   if(num === 10 || num === 5){
-      return true
-   }else {
-      return false
+   switch (num) {
+      case 10:
+         num = true;
+         break
+      case 5:
+         num = true;
+         break
+      default:
+         num = false;
+         break
    }
+   return num;
+   //if(num === 10 || num === 5){
+     // return true
+   //}else {
+     // return false
+   //}
 }
 
 function estaEnRango(num) {
@@ -114,12 +145,21 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
-
-   if(Number.isInteger(num)){
-      return true
-   }else {
-      return false
+   switch(true){
+      case Number.isInteger(num):
+         num = true;
+         break
+      default:
+         num = false;
+         break
    }
+
+   return num
+   //if(Number.isInteger(num)){
+     // return true
+   //}else {
+   //   return false
+   //}
 }
 
 function fizzBuzz(num) {
@@ -128,15 +168,30 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-   if(num % 3){
-      return "fizz";
-   }else if(num % 5){
-      return "buzz"
-   }else if(num % 3 && num % 5){
-      return "fizzbuzz"
-   }else {
-      return false
-   }
+   switch (true) {
+      case num % 3 === 0 && num % 5 === 0:
+        num = 'fizzbuzz';
+        break
+      case num % 3 === 0:
+        num = 'fizz';
+        break
+      case num % 5 === 0:
+        num = 'buzz';
+        break
+      default:
+        num = false;
+        break
+    }
+    return num
+   //if(num % 3 === 0){
+      //return "fizz";
+   //}else if(num % 5 === 0){
+      //return "buzz";
+   //}else if(num % 3 === 0 && num % 5 === 0){
+      //return "fizzbuzz";
+   //}else {
+      //return false;
+   //}
    
 }
 
@@ -169,22 +224,36 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
-   if(num / 2){
-      return "num es primo"
-   }else {
-      return false
-   }
+   if (num <= 1) {
+      return false; // Los números menores o iguales a 1 no son primos
+    }
+    
+    for (let i = 2; i * i <= num; i++) {
+      if (num % i === 0) {
+        return false; // Si es divisible por algún número distinto de 1 y sí mismo, no es primo
+      }
+    }
+    
+    return true;
+
+   //if(num / 2){
+   //   return "num es primo"
+   //}else {
+   //   return false
+   //}
 }
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   if(valor = true){
-      return "Soy verdadero"
-   }else{
-      return "Soy falso"
+   if(valor === false){
+      return 'Soy falso'
+
+   }else {
+      return 'Soy verdadero'
    }
+      
 }
 
 function tieneTresDigitos(num) {
@@ -205,7 +274,7 @@ function doWhile(num) {
    // Tu código:
    do{
       num += 5;
-   }while(num = 8)
+   }while(num === 8);
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/

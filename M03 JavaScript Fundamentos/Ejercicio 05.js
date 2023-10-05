@@ -11,7 +11,7 @@ function esPositivo(num) {
    if(num > 0) {
       return "Es positivo";
    } else if (num < 0) {
-      return "En Negativo";
+      return "Es negativo";
    } else {
       return false;
    }
