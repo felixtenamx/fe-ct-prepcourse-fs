@@ -19,7 +19,7 @@ function mayoriaDeEdad(edad) {
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
-   if(edad >=18){
+   if(edad >= 18){
       return "Allowed"
    } else {
       return "Not allowed"
@@ -210,7 +210,7 @@ function operadoresLogicos(num1, num2, num3) {
    }else if(num3 > num2 && num3 > num1){
       num3 = num3 + 1;
       return num3;
-   }else if(num1 == 0 && num2 == 0 && num3 == 0){
+   }else if(num1 === 0 && num2 === 0 && num3 === 0){
       return "Error";
    }else {
       return false;
